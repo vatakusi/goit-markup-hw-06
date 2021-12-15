@@ -853,6 +853,78 @@ textarea {
   resize: none; /* запрещает изменять размер поля для комментов */
 }
 
+/* === MODAL === */
+
+.modal-form {
+  padding: 40px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  padding-bottom: 12px;
+}
+
+label {
+  padding-bottom: 4px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: var(--primery-text-color);
+}
+input {
+  padding: 0;
+}
+
+.input-wrap + .input-wrap {
+  position: relative;
+  padding: 0;
+}
+
+.modal-input {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-text-input {
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+}
+
+.input-wrap-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* .input-wrap .button.primary {
+  margin-top: 30px;
+}
+ */
 /* === ANIMATION === */
 
 /**/

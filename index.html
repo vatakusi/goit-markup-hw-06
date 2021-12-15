@@ -401,58 +401,82 @@
             </li>
           </ul>
         </div>
+
+        <div class="foot-greed2 f-form">
+          <h3>Подпишитесь на рассылку</h3>
+          <div class="f-form-tumb">
+            <div class="foot-form">
+            <form action="#">
+              <div class="foot-input">
+                <label>
+                <input class="f-input" type="email" name="email" placeholder="E-mail"></label>
+              </div>
+            
+              <button class="button primary foot-btn" type="subsribe">Подписаться 
+                <svg class="send" width="24" heigth="24">
+                  <use href="images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+          </form>
+          </div>
+          
+          </div>
+          
+
       </div>
     </footer>
 
     <!-- === MODAL === -->
 
-    <div class="backdrop is-hidd*n" data-modal>
+    <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <div class="modal-form">
               <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
               <form action="#">
 
                 <div class="modal-field">
-                  <div class="input-wrap"><label for="name">Имя</label>
-                  <input class="modal-input" type="text" name="user-name" id="name" autofocus>
+                  <div class="input-wrap">
+                    <label for="name">Имя</label>
+                    <input class="modal-input" type="text" name="user-name" id="name" autofocus placeholder="Введите Ваше имя">
                     <svg class="input-icon" width="18" height="18">
                       <use href="images/icons.svg#person-black-18dp-1"></use>
                     </svg>
-                </div>
+                  </div>
 
-                <div class="input-wrap">
-                  <label for="tel">Телефон</label>
-                  <input class="modal-input" type="text" name="tel" id="tel">
+                  <div class="input-wrap">
+                    <label for="tel">Телефон</label>
+                    <input class="modal-input" type="text" name="tel" id="tel" placeholder="+38 (000)-000-00-00" pattern="^\d{3}-\d{3}-\d{2}-\d{2}$">
                     <svg class="input-icon" width="18" height="18">
                       <use use href="images/icons.svg#phone-black-18dp-1"></use>
                     </svg>
-                </div>
+                  </div>
 
-                <div class="input-wrap">
-                  <label for="mail">Почта</label>
-                  <input class="modal-input" type="email" name="mail" id="mail">
+                  <div class="input-wrap">
+                    <label for="mail">Почта</label>
+                    <input class="modal-input" type="email" name="mail" id="mail" placeholder="Введите Ваш емейл">
                     <svg class="input-icon" width="18" height="18">
                       <use href="images/icons.svg#email-black-18dp-1"></use>
-                    </svg>
-                </div>
+                      </svg>
+                  </div>
 
-                <!-- Оставить комментарий -->
-                <div class="input-wrap">
-                  <label for="comment">Комментарий</label>
-                  <textarea class="modal-text-input" name="comment" id="comment"  rows="8"></textarea>
-                </div>
+                  <!-- Оставить комментарий -->
+                  <div class="input-wrap">
+                    <label for="comment">Комментарий</label>
+                    <textarea class="modal-text-input" name="comment" id="comment"  rows="8" placeholder="Ввеите Ваш комметнарий"></textarea>
+                  </div>
 
-                <!-- Параметры Конфиденциальности -->
-                <div class="input-wrap">
-                  <input class="modal-confidence-input" type="checkbox" name="" id="policy">
-                  <label for="policy">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
-              
-                </div>
+                  <!-- Параметры Конфиденциальности -->
+                  <div class="input-wrap">
+                    <input class="modal-confidence-input visually-hidden" type="checkbox" name="checkbox" id="policy">
+                    <label class="check-text" for="policy">Соглашаюсь с рассылкой и  <a href="#">: Условиями договора</a></label>
                 
-                <div class="input-wrap-btn">
-                  <button class="button primary" type="submint">Отправить</button>
+                  </div>
+                  
+                  
+                  <div class="input-wrap-btn">
+                    <button class="button primary" type="submint">Отправить</button>
+                  </div>
                 </div>
-              </div>
               </div>
             </form>
             <!-- Кнопка "закрыть" модальное окно -->

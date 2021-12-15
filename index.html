@@ -405,6 +405,26 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <form action="js-speaker-form">
+              <label for="name">Имя</label>
+              <input type="text" name="user-name" id="name" autofocus>
+
+              <label for="tel">Телефон</label>
+              <input type="text" name="tel" id="tel">
+
+              <label for="mail">Почта</label>
+              <input type="email" name="mail" id="mail">
+
+              <!-- Оставить комментарий -->
+              <label for="comment">Оставье комментарий</label>
+              <textarea name="comment" id="comment"  rows="8"></textarea>
+
+              <!-- Параметры Конфиденциальности -->
+              <input type="checkbox" name="" id="">
+              <label for="">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+
+              <button type="submint">Отправить</button>
+            </form>
             <button class="frame-closer" type="button" data-modal-close>
               <svg class="closer-svg">
                 <use href="images/icons.svg#closer"></use>
@@ -414,6 +434,17 @@
         </div>
         <script src="./js/modal.js"">
           
+        </script>
+        <script>
+          (() => {
+            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+              e.preventDefault();
+
+              new FormData(e.currentTarget).forEach((value, name) =>
+                console.log(`${name}: ${value}`),
+              );
+            });
+          })();
         </script>
   </body>
 </html>

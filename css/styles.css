@@ -849,4 +849,10 @@ ul.gallery-boxes {
   height: 11px;
 }
 
+textarea {
+  resize: none; /* запрещает изменять размер поля для комментов */
+}
+
 /* === ANIMATION === */
+
+/**/

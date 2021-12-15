@@ -835,7 +835,7 @@ ul.gallery-boxes {
 }
 
 /* MODAL FORM */
-
+/* === MODAL === */
 .backdrop {
   position: fixed;
   top: 0;
@@ -898,8 +898,6 @@ ul.gallery-boxes {
 textarea {
   resize: none; /* запрещает изменять размер поля для комментов */
 }
-
-/* === MODAL === */
 
 .modal-form {
   padding: 40px;
